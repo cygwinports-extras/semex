@@ -1,0 +1,6 @@
+category: Utils
+requires:
+sdesc: "System V semaphore tester"
+ldesc: "Tester and exerciser for Unix System V semaphore functions. 
+Quite useful for getting hands-on knowledge of them, also as part of a 
+test frame for any semaphore-using program."
