@@ -1,0 +1,22 @@
+NAME="semex"
+VERSION=1.6
+RELEASE=1
+CATEGORY="Utils"
+SUMMARY="System V semaphore tester"
+DESCRIPTION="Tester and exerciser for Unix System V semaphore functions.
+Quite useful for getting hands-on knowledge of them, also as part of a
+test frame for any semaphore-using program."
+HOMEPAGE="http://www.catb.org/~esr/semex/"
+SRC_URI="http://www.catb.org/~esr/semex/semex-${VERSION}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	dobin ${PN}.exe
+	doman ${PN}.1
+}
